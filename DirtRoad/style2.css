@@ -1,0 +1,73 @@
+:root {
+    --charcoal: #1C1C1C;
+    --rust: #B7410E;
+    --gunmetal: #2a3439;
+    --steel: #C0C0C0;
+    --blood-red: #8A0303;
+    --dusty-white: #E0E0E0;
+  }
+  
+  body {
+    background-color: var(--charcoal);
+    color: var(--dusty-white);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: var(--gunmetal);
+    padding: 1.5rem;
+    text-align: center;
+    border-bottom: 2px solid var(--rust);
+  }
+  
+  h1, h2, h3 {
+    color: var(--steel);
+  }
+  
+  a {
+    color: var(--rust);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: var(--blood-red);
+  }
+  nav {
+    margin: 2rem 0;
+    text-align: center;
+  }
+  button {
+    background-color: var(--rust);
+    color: var(--dusty-white);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    background-color: var(--blood-red);
+  }
+  
+  section {
+    background-color: var(--gunmetal);
+    padding: 2rem;
+    margin: 1rem;
+    border-left: 5px solid var(--rust);
+    border-radius: 6px;
+  }
+  
+  footer {
+    background-color: var(--charcoal);
+    text-align: center;
+    padding: 1rem;
+    color: var(--steel);
+    font-size: 0.9rem;
+    border-top: 1px solid var(--rust);
+  }
+  
