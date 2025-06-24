@@ -75,7 +75,8 @@ h1, h2, h3, h4, h5{
   }
   
   #shows img{
-    max-width: 800px;
+    width: 800px;
+    max-width: 80%;
     border:#ffc71e outset 1px;
   }
 
