@@ -18,18 +18,12 @@ h1, h2, h3, h4, h5{
     padding: 20px;
     background-color: #ffc71e;
     margin: 2rem 0;
- 
+    display: flex;
   }
   
 
   
-  .navbar {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    justify-content: center;
- 
-  }
+
   
   .navbar a {
     color: #ffc71e;
@@ -95,3 +89,31 @@ h1, h2, h3, h4, h5{
   .footer-icons a:hover {
     color: #1e90ff;
   }
+
+
+@media (max-width: 400px) {
+.navbar {
+    flex-direction: column;
+    gap: 0px;
+    justify-content: center;
+ 
+  }
+  .navbar a{
+    display: block;
+    padding: 2px;
+    text-align: center;
+    border: 1px solid #ffc71e;
+  }
+
+}
+
+@media (min-width: 401px) {
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    justify-content: center;
+ 
+  }
+}
