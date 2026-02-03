@@ -9,7 +9,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #0C0C0C;
+    /* background-color: #0C0C0C; */
+    background-color: #8C522A;
     color: #E5E5E5;
     
   }
@@ -29,13 +30,14 @@ a:hover {
   header {
     width: 100%;
     padding: 20px;
-   background-color: #8C522A;
+   /* background-color: #8C522A; */
+   background-color: black;
     margin: 2rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0;
-    border-bottom: 3px solid #D9A441;
+    
   }
 
 .logo img {
@@ -63,7 +65,7 @@ a:hover {
     margin: 5px 0 0;
 }
 /* Navigation Bar */
-.navbar {
+.navbar ul {
     display: flex;
     justify-content: center;
     background-color: #4D6A7A;
@@ -115,6 +117,50 @@ ul {
     height: auto;
     border: 3px solid #D9A441;
     margin-top: 20px;
+}
+
+
+:root {
+  --hamburger-slice-color: black;
+  --size: clamp(16px, 10vmin, 32px); /* Sensible value */
+  --size: 200px; /* 👈 A value to show that the math is correct */
+}
+
+#menu {
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+#hamburger-toggle {
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+}
+#hamburger {
+  display: block;
+  padding: 0.5rem;
+  cursor: pointer;
+  width: var(--size);
+  height: var(--size);
+  box-sizing: content-box;
+  transition: transform 0.2s ease;
+}
+#hamburger .slice {
+  --slice-height: 2px;
+  display: block;
+  position: relative;
+  width: 100%;
+  height: var(--slice-height, 2px);
+  border-radius: var(--slice-height);
+  transition: all 0.2s ease;
+  background-color: var(--hamburger-slice-color);
+  opacity: 90%;
+}
+#hamburger .slice {
+  margin-top: 22%; /* Fallback to produce something hamburger-ish if calc is not available */
+  margin-top: calc(33% - var(--slice-height));
+  top: calc((33% - var(--slice-height)) / -2);
 }
 
 
