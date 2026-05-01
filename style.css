@@ -27,13 +27,6 @@ body {
 
 
 
-article h1, h2, h3, h4,h5{
-    text-align: center;
-  color: #8C3B2F;
-  margin-top: 1.5rem;
-  margin-bottom: 0.75rem;
-  font-family: 'Poppins', sans-serif;
-}
 
 .card {
   background: white;
@@ -44,7 +37,7 @@ article h1, h2, h3, h4,h5{
 }
 
 
-article {
+.one-column {
 
   max-width: 900px;
   
@@ -55,14 +48,37 @@ article {
 
 
 
+.two-column{
+    
+  max-width: 1200px;
+  
+  line-height: 1.6;
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
 
-article p {
+
+main h1, h2, h3, h4,h5{
+    text-align: center;
+  color: #8C3B2F;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+main p {
   margin-bottom: 1rem;
   color: #333;
   font-size: 1.05rem;
 }
 
-article a:hover {
+main a:hover {
   border-bottom: 1px solid #8C3B2F;
   color: #8C3B2F;
 }
@@ -148,10 +164,7 @@ footer{
 }
 
 
-.flex-horizontal{
-    display: flex;
-    gap: 3rem;
-}
+
 
 
 
@@ -183,16 +196,17 @@ header .social{
   }
 
 
-.cardPlacer{
-    display: none;
+
+.cardPlacer img{
+    max-width: 400px;
+   
+    border-radius: 30px;
 }
 
 
 
-
-
 /* Larger screens */
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   body {
     font-size: 18px;
   }
@@ -233,7 +247,7 @@ header .social{
          display: flex;
         
         flex-direction: row;
-       
+       align-items: start;
      
     }
 
@@ -255,7 +269,12 @@ header .social{
         display: block;
     }
 
+.two-column{
 
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+}
     .logo img{
         width: 10rem;
  
@@ -273,7 +292,7 @@ header .social{
  footer{
     padding: 20px;
  }
- article{
+ main{
     width: 60%;
     margin: auto;
  }
@@ -281,15 +300,25 @@ header .social{
 .cardPlacer{
   display: block;
   padding: 1.5rem;
-  
+  background-color: black;
  
   margin-bottom: 1.5rem;
 }
 
-.cardPlacer img{
-    max-width: 400px;
-    border-radius: 30px;
-}
+  .cardPlacer {
+    display: block;
+    padding: 1.5rem; /* Matches .card */
+    background: black; /* Matches .card */
+    border-radius: 8px; /* Matches .card */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* Matches .card */
+    flex: 1; /* Ensures both columns take up equal width */
+    text-align: center;
+    border-radius: 20px;
+  }
+
+  .card {
+    flex: 1; /* Makes the text card match the image card width */
+  }
 
 
 }
