@@ -62,6 +62,7 @@ body {
 }
 
 
+
 main h1, h2, h3, h4,h5{
     text-align: center;
   color: #8C3B2F;
@@ -245,6 +246,40 @@ header .social{
     }
 
 
+
+.two-column{
+
+    flex-direction: row;
+  align-item: center;
+    justify-content: space-between;
+}
+
+
+
+
+/* Make image scale properly */
+.content-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+    .content-image{
+        max-width: 700px;
+         display: block;
+         padding: 1.5rem;
+           background-color: black;
+            margin-bottom: 1.5rem;
+    }
+
+
+
+.text{
+    flex: 2;
+    min-width: 650px;
+    padding: 1.5rem;
+}
+
     .nav {
         display: flex;
         justify-content: space-between;
@@ -285,12 +320,8 @@ header .social{
         display: block;
     }
 
-.two-column{
 
-    flex-direction: row;
-    align-items: start;
-    justify-content: start;
-}
+
     .logo img{
         width: 10rem;
  
