@@ -1,5 +1,6 @@
 /* Gold:  #B28A63;
-   Cream: #F5EFE6*/
+   Cream: #F5EFE6
+   Redish #8C3B2F*/
 
 *{
     margin: 0;
@@ -160,16 +161,31 @@ footer{
     width: 100%;
     padding: 10px;
 
-   background-color: rgba(0, 0, 0, 0.5);
+   background-color: rgba(0, 0, 0, 0.6);
+}
+
+.main-content a{
+    display: inline-block;
+    min-width: 150px;
+    background-color: white;
+    padding: 10px;
+    text-align:center;
+    margin: 10px;
+    color: #8C3B2F;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+.main-content a:hover{
+  
+    background-color: #F5EFE6;
+  
 }
 
 
-
-
-
-
 .main {
-    height: 400px;
+    height: 500px;
   position: relative;
   overflow: hidden;
   color: white;
@@ -239,7 +255,7 @@ header .social{
         order: 0;
     }
     .main {
-        height: 800px;
+        height: 850px;
         clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
         
     }
