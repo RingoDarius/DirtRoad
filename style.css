@@ -63,16 +63,26 @@ body {
 
 
 
-main h1, h2, h3, h4,h5{
-    text-align: center;
+main  h2, h3, h4,h5{
+   
   color: #8C3B2F;
   margin-top: 1.5rem;
   margin-bottom: 0.75rem;
   font-family: 'Poppins', sans-serif;
 }
 
-
-
+main h1 {
+  font-size: 2.5rem;              /* much bigger */
+  text-align: center;
+  color: #8C3B2F;
+  margin: 2rem 0 1rem;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 2px;            /* adds presence */
+  
+  text-shadow: 
+    2px 2px 0 #000,               /* bold shadow */
+    4px 4px 10px rgba(0,0,0,0.4); /* soft depth */
+}
 
 main p {
   margin-bottom: 1rem;
@@ -213,14 +223,18 @@ header .social{
   }
 
 
-
-.cardPlacer img{
-    max-width: 400px;
-   
-    border-radius: 30px;
+.text{
+    padding: 1.5rem;
 }
 
 
+
+/* Make image scale properly */
+.content-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
 /* Larger screens */
 @media (min-width: 1024px) {
@@ -239,7 +253,7 @@ header .social{
     /* Hamburger button */
     .hamburger {
     display: none;
-    font-size: 24px;
+    font-size: 16px;
     background: none;
     border: none;
     color: white;
@@ -250,9 +264,11 @@ header .social{
 .two-column{
 
     flex-direction: row;
-  align-item: center;
+    align-items: center;
     justify-content: space-between;
+    
 }
+
 
 
 
