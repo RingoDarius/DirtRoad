@@ -1,211 +1,245 @@
-/* styles.css */
+/* Gold:  #B28A63;
+   Cream: #F5EFE6*/
+
 *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.2rem;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    /* background-color: #0C0C0C; */
-    background-color: #8C522A;
-    color: #E5E5E5;
-    
-  }
+  font-family: 'Inter', sans-serif;
+     background: #F5EFE6; /*soft cream background */
+}
+.flex-container{
+    background-color: black;
+}
+
+
+article {
+  padding: 2rem 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.6;
   
-h1, h2, h3, h4, h5{
-  text-align: center;
 }
-a {
-    color: #F2C07B;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #D9A441;
-}
-
-  header {
-    width: 100%;
-    padding: 20px;
-   /* background-color: #8C522A; */
-   background-color: black;
-    margin: 2rem 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    
-  }
-
-.logo img {
-    max-width: 300px;
-    display: block;
-    margin: 0 auto 10px;
-}
-  .header-content{
-    margin: 2em;
-    padding: 4em;
-     text-shadow: #222 2px 2px;
-   
-  }
-
-  .header-content h1{
-   color: #F3F3F3;
-    font-size: 48px;
-    margin: 0;
-
-  }
-
-.header-content h2 {
-    color: #F2C07B;
-    font-size: 24px;
-    margin: 5px 0 0;
-}
-/* Navigation Bar */
-.navbar ul {
-    display: flex;
-    justify-content: center;
-    background-color: #4D6A7A;
-    padding: 10px 0;
-}
-.navbar a {
-    color: #F3F3F3;
-    padding: 14px 20px;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-  
-.navbar a:hover {
-
-    color: #D9A441;;
-}
-  
-/* Sections */
-section {
-    padding: 50px 20px;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-  
-  h1 {
-    font-size: 3rem;
-    margin: 0;
-  }
-  
-
-h2 {
-    color: #F3F3F3;
-    border-bottom: 2px solid #D9A441;
-    padding-bottom: 5px;
-}
-  
-p, li {
-    font-size: 18px;
-    line-height: 1.6;
-}
-  
-ul {
-    list-style-type: square;
-    padding-left: 20px;
-}
-  /* Image in Shows Section */
-#shows img {
-    max-width: 90%;
-    height: auto;
-    border: 3px solid #D9A441;
-    margin-top: 20px;
-}
-
-
-:root {
-  --hamburger-slice-color: black;
-  --size: clamp(16px, 10vmin, 32px); /* Sensible value */
-  --size: 200px; /* 👈 A value to show that the math is correct */
-}
-
-#menu {
-  visibility: hidden;
-  position: absolute;
-  top: 100%;
-  left: 0;
-}
-#hamburger-toggle {
-  opacity: 0;
-  cursor: pointer;
-  position: absolute;
-}
-#hamburger {
-  display: block;
-  padding: 0.5rem;
-  cursor: pointer;
-  width: var(--size);
-  height: var(--size);
-  box-sizing: content-box;
-  transition: transform 0.2s ease;
-}
-#hamburger .slice {
-  --slice-height: 2px;
-  display: block;
-  position: relative;
-  width: 100%;
-  height: var(--slice-height, 2px);
-  border-radius: var(--slice-height);
-  transition: all 0.2s ease;
-  background-color: var(--hamburger-slice-color);
-  opacity: 90%;
-}
-#hamburger .slice {
-  margin-top: 22%; /* Fallback to produce something hamburger-ish if calc is not available */
-  margin-top: calc(33% - var(--slice-height));
-  top: calc((33% - var(--slice-height)) / -2);
-}
-
-
-  
-/* Footer */
-footer {
-    background-color: #8C522A;
-    padding: 20px;
+article h1, h2, h3, h4,h5{
     text-align: center;
-    color: #F3F3F3;
-    border-top: 3px solid #D9A441;
-}
-.footer-icons a {
-    color: #F2C07B;
-    margin: 0 10px;
-}
-  
-
-.footer-icons a:hover {
-    color: #D9A441;
+  color: #8C3B2F;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-family: 'Poppins', sans-serif;
 }
 
-/* Responsive adjustments */
-@media screen and (max-width: 600px) {
-    .navbar {
-        flex-direction: column;
+article .card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  margin-bottom: 1.5rem;
+}
+
+
+article p {
+  margin-bottom: 1rem;
+  color: #333;
+  font-size: 1.05rem;
+}
+
+article a:hover {
+  border-bottom: 1px solid #8C3B2F;
+  color: #8C3B2F;
+}
+
+header{
+    background-color: #000000;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+   flex-direction: column;
+
+   
+}
+
+
+footer{
+    background-color: black;
+    color: #B28A63;
+    padding: 10px;
+    text-align: center;
+    font-style: italic;
+}
+.logo img{
+    width: 10rem;
+ 
+}
+
+
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    width: 100%;
+     gap: 20px;
+     padding-bottom: 15px;
+  }
+
+
+
+.menu a {
+  color: #F5EFE6;
+  text-decoration: none;
+}
+.menu a:hover {
+  color: #B28A63;
+  text-decoration: none;
+  border-bottom: 1px solid #B28A63;
+}
+
+
+.social a {
+  color: white;
+  font-size: 1.5rem;
+  margin: 0 10px;
+ 
+}
+
+.social a:hover {
+  color: #B28A63; /* your brand color */
+  transform: scale(1.1);
+}
+
+
+  .hamburger {
+     display: block;
+     background-color: black;
+     color: white;
+     font-size: 3rem;
+     float: right;
+  }
+
+
+.main-content {
+
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 10px;
+
+   background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+    .main {
+        height: 400px;
+        background: url('images/band.png') center/cover no-repeat;
+       
+        position: relative;
+        color: white;
     }
+
+.nav{
+    order: 2;
+}
+.logo{
+    order: 1;
+}
+
+.social{
+    display: none;
+}
+
+  .menu.active {
+    display: flex;
+  }
+
+/* Larger screens */
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+
     header{
-      flex-direction: column;
-      margin: 0px;
-    }
-    .navbar a {
-        padding: 10px;
-    }
-    .header-content{
-      margin: 0;
-      padding: 1em;
-    }
-    .header-content h1 {
-        font-size: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 15rem;
+            flex-direction: row;
     }
 
-    .header-content h2 {
-        font-size: 20px;
+    /* Hamburger button */
+    .hamburger {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
     }
 
 
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        padding: 10px 20px;
+        flex: 1;
+        order: 0;
+    }
+
+    .menu{
+         display: flex;
+        
+        flex-direction: row;
+       
+     
+    }
+
+
+    .logo{
+        flex: 1;
+        text-align: center;
+         order:1;
+    }
+
+
+    header .social{
+        flex:1;
+        text-align: right;
+        display: block;
+        order: 2;
+    }
+    footer .social{
+        display: block;
+    }
+    .main {
+        height: 800px;
+        clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+    
+    }
+
+    .logo img{
+        width: 10rem;
+ 
+    }
+
+.main-content {
+  position: absolute;
+  bottom: 220px;
+  left: 50px;
+  width: fit-content;
+  padding: 30px;
+  border-radius: 5px;
+
+}
+ footer{
+    padding: 20px;
+ }
+ article{
+    width: 60%;
+    margin: auto;
+ }
 }
