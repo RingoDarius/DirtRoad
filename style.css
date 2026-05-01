@@ -6,24 +6,27 @@
     padding: 0;
     box-sizing: border-box;
     font-size: 1.2rem;
-}
 
+}
+html{
+    height: 100%; /* Ensures the container covers the whole screen */
+}
 body {
   font-family: 'Inter', sans-serif;
      background: #F5EFE6; /*soft cream background */
+     display: flex;
+     flex-direction: column;
+     min-height: 100vh;
 }
 .flex-container{
     background-color: black;
 }
 
 
-article {
-  padding: 2rem 1rem;
-  max-width: 900px;
-  margin: 0 auto;
-  line-height: 1.6;
-  
-}
+
+
+
+
 article h1, h2, h3, h4,h5{
     text-align: center;
   color: #8C3B2F;
@@ -32,13 +35,25 @@ article h1, h2, h3, h4,h5{
   font-family: 'Poppins', sans-serif;
 }
 
-article .card {
+.card {
   background: white;
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   margin-bottom: 1.5rem;
 }
+
+
+article {
+
+  max-width: 900px;
+  
+  line-height: 1.6;
+  
+}
+
+
+
 
 
 article p {
@@ -73,7 +88,7 @@ footer{
 }
 .logo img{
     width: 10rem;
- 
+
 }
 
 
@@ -133,13 +148,23 @@ footer{
 }
 
 
-    .main {
-        height: 400px;
-        background: url('images/band.png') center/cover no-repeat;
-       
-        position: relative;
-        color: white;
-    }
+.flex-horizontal{
+    display: flex;
+    gap: 3rem;
+}
+
+
+
+.main {
+    height: 400px;
+  position: relative;
+  overflow: hidden;
+  color: white;
+   background: url('images/band.png') center/cover no-repeat;
+  flex: 1 0 auto;
+}
+
+
 
 .nav{
     order: 2;
@@ -148,13 +173,23 @@ footer{
     order: 1;
 }
 
-.social{
+header .social{
     display: none;
 }
+
 
   .menu.active {
     display: flex;
   }
+
+
+.cardPlacer{
+    display: none;
+}
+
+
+
+
 
 /* Larger screens */
 @media (min-width: 768px) {
@@ -189,7 +224,11 @@ footer{
         flex: 1;
         order: 0;
     }
-
+    .main {
+        height: 800px;
+        clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+        
+    }
     .menu{
          display: flex;
         
@@ -215,11 +254,7 @@ footer{
     footer .social{
         display: block;
     }
-    .main {
-        height: 800px;
-        clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
-    
-    }
+
 
     .logo img{
         width: 10rem;
@@ -242,4 +277,19 @@ footer{
     width: 60%;
     margin: auto;
  }
+
+.cardPlacer{
+  display: block;
+  padding: 1.5rem;
+  
+ 
+  margin-bottom: 1.5rem;
+}
+
+.cardPlacer img{
+    max-width: 400px;
+    border-radius: 30px;
+}
+
+
 }
