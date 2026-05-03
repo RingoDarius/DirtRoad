@@ -196,9 +196,9 @@ footer{
 
 
 .main {
-    height: 500px;
+    height: 350px;
   position: relative;
-  overflow: hidden;
+  
   color: white;
    background: url('images/band.png') center/cover no-repeat;
   flex: 1 0 auto;
