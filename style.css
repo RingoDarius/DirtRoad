@@ -368,20 +368,6 @@ header .social{
   margin-bottom: 1.5rem;
 }
 
-  .cardPlacer {
-    display: block;
-    padding: 1.5rem; /* Matches .card */
-    background: black; /* Matches .card */
-    border-radius: 8px; /* Matches .card */
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* Matches .card */
-    flex: 1; /* Ensures both columns take up equal width */
-    text-align: center;
-    border-radius: 20px;
-  }
-
-  .card {
-    flex: 1; /* Makes the text card match the image card width */
-  }
 
 
 }
