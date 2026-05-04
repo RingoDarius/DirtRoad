@@ -2,6 +2,15 @@
    Cream: #F5EFE6
    Redish #8C3B2F*/
 
+:root{
+  --primary-color: #8C3B2F;
+  --light-neutral: #F5EFE6;
+  --accent: #B28A63;
+  --dark:  linear-gradient(180deg,rgba(1, 13, 18, 1) 70%, rgba(140, 59, 47, 1) 100%);
+
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -14,13 +23,13 @@ html{
 }
 body {
   font-family: 'Inter', sans-serif;
-     background: #F5EFE6; /*soft cream background */
+     background: var(--light-neutral); /*soft cream background */
      display: flex;
      flex-direction: column;
      min-height: 100vh;
 }
 .flex-container{
-    background-color: black;
+       background: var(--dark);
 }
 
 
@@ -65,7 +74,7 @@ body {
 
 main  h2, h3, h4,h5{
    
-  color: #8C3B2F;
+  color: var(--primary-color);
   margin-top: 1.5rem;
   margin-bottom: 0.75rem;
   font-family: 'Poppins', sans-serif;
@@ -74,7 +83,7 @@ main  h2, h3, h4,h5{
 main h1 {
   font-size: 2.5rem;              /* much bigger */
   text-align: center;
-  color: #8C3B2F;
+  color: var(--primary-color);
   margin: 2rem 0 1rem;
   font-family: 'Poppins', sans-serif;
   letter-spacing: 2px;            /* adds presence */
@@ -91,12 +100,12 @@ main p {
 }
 
 main a:hover {
-  border-bottom: 1px solid #8C3B2F;
-  color: #8C3B2F;
+  border-bottom: 1px solid var(--primary-color);
+  color: var(--primary-color);
 }
 
 header{
-    background-color: #000000;
+   
     color: white;
     display: flex;
     align-items: center;
@@ -109,7 +118,7 @@ header{
 
 footer{
     background-color: black;
-    color: #B28A63;
+    color: var(--accent);
     padding: 10px;
     text-align: center;
     font-style: italic;
@@ -133,13 +142,13 @@ footer{
 
 
 .menu a {
-  color: #F5EFE6;
+  color: var(--light-neutral);
   text-decoration: none;
 }
 .menu a:hover {
-  color: #B28A63;
+  color: var(--accent);
   text-decoration: none;
-  border-bottom: 1px solid #B28A63;
+  border-bottom: 1px solid var(--accent);
 }
 
 
@@ -151,7 +160,7 @@ footer{
 }
 
 .social a:hover {
-  color: #B28A63; /* your brand color */
+  color: var(--accent); 
   transform: scale(1.1);
 }
 
@@ -162,6 +171,7 @@ footer{
      color: white;
      font-size: 2rem;
      float: right;
+  
   }
 
 
@@ -182,7 +192,7 @@ footer{
     padding: 10px;
     text-align:center;
     margin: 10px;
-    color: #8C3B2F;
+    color: var(--primary-color);
     text-decoration: none;
     transition: all 0.3s ease;
     border-radius: 4px;
@@ -190,7 +200,7 @@ footer{
 
 .main-content a:hover{
   
-    background-color: #F5EFE6;
+    background-color: var(--light-neutral);
   
 }
 
