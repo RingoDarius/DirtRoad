@@ -167,10 +167,10 @@ footer{
 
   .hamburger {
      display: block;
-     background-color: black;
      color: white;
      font-size: 2rem;
      float: right;
+     padding-right: 8px;
   
   }
 
