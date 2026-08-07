@@ -16,6 +16,10 @@ let links = [
         "pageName": "Music",
         "URL": "music.html"
     },
+     {
+        "pageName": "Gallery",
+        "URL": "gallery.html"
+    },
     {
         "pageName": "Contact",
         "URL": "contact.html"
@@ -63,3 +67,49 @@ _____________________________________________________________________________
   });
 
 
+
+  /*
+_____________________________________________________________________________
+                       Load Images
+
+*/
+
+
+  const images = [
+    "July4_2026_FullBand.jpeg",
+    "July4_2026_Brian.jpeg",
+    "July4_2026_Texas.jpeg",
+    "July4_2026_Chad.jpeg",
+    "July4_2026_Kim.jpeg",
+    "July4_2026_Brian02.jpeg",
+    "July4_2026_Kim03.jpeg", 
+    "July4_2026_BrianC.jpeg",
+    "July4_2026_FullBand02.jpeg",
+    "July4_2026_Kim04.jpeg", 
+    "July4_2026_John.jpeg",
+    "July4_2026_John02.jpeg",
+    "July4_2026_Kim02.jpeg", 
+    "July4_2026_Brian03.jpeg", 
+    "July4_2026_Chad_03.jpeg", 
+    "July4_2026_Chad_Brian_John.jpeg", 
+    "July4_2026_FullBand02.jpeg", 
+    "July4_2026_Kim04.jpeg", 
+    "July4_2026_Todd.jpeg", 
+    "July4_2026_Todd_BrianC.jpeg"
+];
+
+const gallery = document.getElementById("gallery");
+
+images.forEach(file => {
+
+    const img = document.createElement("img");
+
+    img.src = "images/GloryDays2026/" + file;
+
+    img.loading = "lazy";
+
+    img.alt = "Dirt Road live";
+
+    gallery.appendChild(img);
+
+});
