@@ -110,6 +110,19 @@ images.forEach(file => {
 
     img.alt = "Dirt Road live";
 
-    gallery.appendChild(img);
+    const link = document.createElement("a");
+
+    link.href = img.src;
+
+    link.className = "glightbox";
+
+    link.appendChild(img);
+
+    gallery.appendChild(link);
 
 });
+
+const lightbox = GLightbox();
+
+
+
